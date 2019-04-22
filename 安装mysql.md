@@ -1,8 +1,38 @@
-1.*macOS环境*
+1. *macOS环境*
 ## 下载地址
-[macOS](https://dev.mysql.com/downloads/mysql/)
+[macOS](https://dev.mysql.com/downloads/mysql/)  
+如下图所示  
+![下载图示](./images/mysqlmac1.png)  
+点击“download”跳转到下页  
+![下载图示2](./images/mysqlmac2.png)  
+## 安装
+1. 点击"mysql-8.0.15-macos10.14-x86_64.dmg"进行安装，双击pkg文件，一系列的继续输入密码后到"configuration",选择"use legacy password encryption"(选择此项密码方便设置记忆) ，然后点击"next"   
+![密码选择](./images/mysqlmac3.png)  
+2. 输入密码点击"finish"并完成 ,弹出电脑输入密码框，输入本电脑的密码 
+![输入密码](./images/mysqlmac4.png)
+3. 环境配置(终端操作在英文输入法下进行！！！)  
+点击“启动台”-》“其他”-》“终端”  
+![打开终端](./images/mysqlmac5.png)  
+输入`sudo vim .bash_profile`，回车，输入密码后显示一个界面，  
+![打开配置文件](./images/mysqlmac6.png)  
+![配置文件](./images/mysqlmac7.png)  
+点击键盘的`i`按键，界面下面有个"insert"，表示可以输入  
+![insert](./images/mysqlmac8.png)  
+然后输入`export PATH=${PATH}:/usr/local/mysql/bin`后点击键盘的`esc`按键，"insert"字消失  
+![输入环境变量](./images/mysqlmac9.png)  
+输入键盘的`:`,左下角显示如图  
+![输入:](./images/mysqlmac10.png)  
+然后输入`wq`回车进行保存，自动关闭返回终端界面    
+![保存](./images/mysqlmac11.png)  
+输入`source .bash_profile`或者重启终端，使环境生效  
+![环境生效](./images/mysqlmac12.png)  
+4. 测试  
+输入`mysql -u root -p`回车，输入密码，显示`mysql>`字样，表示成功。 
+![测试](./images/mysqlmac13.png)  
+5. 如果无法启动mysql,点击“设置”-》最下面的“mysql”，如下图所示  
+![mysql设置](./images/mysqlmac14.png)
 
-2.*windows*环境
+2. *windows*环境
 ## 下载地址
 
 [windows](https://dev.mysql.com/downloads/mysql/)  

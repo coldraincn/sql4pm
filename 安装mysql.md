@@ -240,7 +240,7 @@
 
     ![vim7](./images/vim7.png)   
 
-    最后在终端输入`brew services restart mysql`重启mysql，然后我们就可以使用[导入导出以及可视化](导入导出以及可视化.md)->导出数据库->4导出查询的数据了,而且可以随意导出数据到任何文件夹（以前是只能tmp),登陆mysql,use 一个数据库，使用`select * from test into outfile '/Users/apple/Desktop/fdfd.xls'`, 导出到桌面^_^
+    最后在终端输入`brew services restart mysql`重启mysql，然后我们就可以使用[导入导出以及可视化](导入导出以及可视化.md)->导出数据库->4导出查询的数据了,而且可以随意导出数据到任何文件夹（以前是只能tmp),登陆mysql,use 一个数据库，使用`select * from test into outfile '/Users/apple/Desktop/fdfd.xls';`, 导出到桌面^_^
 
 10. 删除mysql，在终端中输入`brew uninstall mysql`,然后输入`brew cleanup`
 
